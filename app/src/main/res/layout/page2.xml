@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="20dp">
 
-    <ListView
-        android:id="@+id/listView"
+    <TextView
+        android:id="@+id/questionText"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="50dp"/>
+        android:layout_height="wrap_content"
+        android:text="Question will appear here"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/answerInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your answer"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Answer" />
 </LinearLayout>
